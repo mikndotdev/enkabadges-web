@@ -32,8 +32,11 @@ import ShieldsLogo from "../assets/shields.png";
             <Image src="https://enkabadges-api.maamokun.workers.dev/hsr/801974939/su?style=flat-square&colour=brown&title=HSR"
                    alt="Badge" width={200} height={10}/>
         </div>
+        <a href="https://github.com/mikndotdev/enkabadges">
+            <h3 class="text-center mt-3 font-bold text-blue-500">Check out the source code on GitHub!</h3>
+        </a>
         <div class="flex flex-col items-center justify-center mt-16">
-            <Selector client:load/>
+            <Selector client:only/>
         </div>
     </main>
     <div class="text-white">
@@ -50,7 +53,8 @@ import ShieldsLogo from "../assets/shields.png";
                     <Image src={ShieldsLogo} alt="Shields Logo" class="w-28"/>
                 </a>
             </div>
-            <div class="flex flex-col justify-center items-center mt-4">
+            <div class="flex flex-row justify-center items-center mt-4 space-x-5">
+                <h2 class="text-2xl font-bold text-center mt-2">A thingy from</h2>
                 <a href="https://mikn.dev">
                     <Image src={KawaiiLogo} alt="Kawaii Logo" class="w-40"/>
                 </a>
