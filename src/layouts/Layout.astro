@@ -1,0 +1,33 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+
+import '@fontsource-variable/noto-sans';
+import { Toaster } from "sonner";
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+		<script defer src="https://analytics.mikandev.com/script.js" data-website-id="4a5c3e48-a6f1-472a-9e67-099bf17e6957"/>
+	</head>
+	<body>
+		<slot />
+		<Toaster richColors={true} client:load/>
+	</body>
+</html>
+
+<style>
+	:root {
+		background: #000052;
+	}
+</style>
