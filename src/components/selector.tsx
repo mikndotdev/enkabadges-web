@@ -265,7 +265,7 @@ export default function Selector() {
                                 className={"btn btn-accent min-w-full"}
                                 onClick={() =>
                                     copyToClipboard(
-                                        `[![EnkaBadges Badge](${url})](https://enkabadges.mikn.dev/)`
+                                        `[![EnkaBadges Badge](${url})](https://enkabadges.mikn.dev/)`,
                                     )
                                 }
                             >

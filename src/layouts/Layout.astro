@@ -6,6 +6,7 @@ interface Props {
 const { title } = Astro.props;
 
 import "@fontsource-variable/noto-sans";
+import Posthog from "../components/posthog.astro";
 import { Toaster } from "sonner";
 ---
 
@@ -18,7 +19,7 @@ import { Toaster } from "sonner";
 		<link rel="icon" type="image/png" href="/favicon.ico" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
-		<script defer src="https://analytics.mikandev.com/script.js" data-website-id="4a5c3e48-a6f1-472a-9e67-099bf17e6957"/>
+		<Posthog />
 	</head>
 	<body>
 		<slot />
